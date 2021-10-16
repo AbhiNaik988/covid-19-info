@@ -3,6 +3,7 @@ package com.example.covid_19_info.model;
 import androidx.annotation.NonNull;
 
 public class Root {
+    private long updated;
     private String country;
     private int cases;
     private int todayCases;
@@ -32,6 +33,14 @@ public class Root {
                 ", casesPerOneMillion=" + casesPerOneMillion +
                 ", population=" + population +
                 '}';
+    }
+
+    public long getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(long updated) {
+        this.updated = updated;
     }
 
     public CountryInfo getCountryInfo() {

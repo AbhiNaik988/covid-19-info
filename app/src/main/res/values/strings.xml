@@ -10,4 +10,5 @@
     <string name="temp_daily_numbers_text">(4543)</string>
     <string name="population_text">Population</string>
     <string name="cases_per_million_text">Cases per million</string>
+    <string name="last_updated_text">Last updated</string>
 </resources>

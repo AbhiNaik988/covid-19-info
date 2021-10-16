@@ -13,3 +13,4 @@ public interface Api {
     @GET("covid-19/countries")
     Call<List<Root>> getCountries();
 }
+
