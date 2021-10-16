@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Covid-19-Info</string>
-    <string name="cases_text">Cases</string>
+    <string name="cases_text">Confirmed</string>
     <string name="recovered_text">Recovered</string>
     <string name="active_text">Active</string>
     <string name="deaths_text">Deaths</string>
