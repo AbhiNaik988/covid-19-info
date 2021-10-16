@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ab_na/AndroidStudioProjects/Covid19Info/app/src/main/res/drawable-v24/view_drawable.xml" value="0.290625" />
+        <entry key="..\:/Users/ab_na/AndroidStudioProjects/Covid19Info/app/src/main/res/drawable/relative_color_diff.xml" value="0.290625" />
+        <entry key="..\:/Users/ab_na/AndroidStudioProjects/Covid19Info/app/src/main/res/drawable/relative_drawable.xml" value="0.290625" />
         <entry key="..\:/Users/ab_na/AndroidStudioProjects/Covid19Info/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
       </map>
     </option>
