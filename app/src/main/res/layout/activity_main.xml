@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F2F1EF"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -35,6 +36,7 @@
         android:paddingBottom="15dp">
 
         <GridLayout
+            android:id="@+id/grid_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
@@ -46,45 +48,321 @@
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cases_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/confirmed_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cases_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cases_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/daily_cases_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cases_tv"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_daily_numbers_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/brown"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/recovered_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/recovered_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recovered_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recovered_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/daily_recovered_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recovered_tv"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_daily_numbers_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/green"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/active_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/active_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/active_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/active_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/daily_active_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/active_tv"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_daily_numbers_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/deaths_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/deaths_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deaths_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deaths_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/daily_deaths_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deaths_tv"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_daily_numbers_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/critical_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/critical_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/critical_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/critical_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:background="@color/white"
-                app:cardCornerRadius="20dp"></androidx.cardview.widget.CardView>
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/population_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/population_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/population_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/population_text"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
 
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
         </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_below="@+id/grid_layout"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cases_per_million_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/cases_per_million_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cases_per_million_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/temp_numbers_text"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 
     <RelativeLayout

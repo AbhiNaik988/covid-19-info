@@ -5,4 +5,9 @@
     <string name="active_text">Active</string>
     <string name="deaths_text">Deaths</string>
     <string name="critical_text">Critical</string>
+    <string name="confirmed_text">Confirmed</string>
+    <string name="temp_numbers_text">69696969</string>
+    <string name="temp_daily_numbers_text">(4543)</string>
+    <string name="population_text">Population</string>
+    <string name="cases_per_million_text">Cases per million</string>
 </resources>
