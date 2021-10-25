@@ -1,9 +1,11 @@
-package com.example.covid_19_info;
+package com.abhinaik.covid_19_info;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.covid_19_info.R;
 
 import java.util.Objects;
 

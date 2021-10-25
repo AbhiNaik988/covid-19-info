@@ -1,4 +1,4 @@
-package com.example.covid_19_info.retrofit;
+package com.abhinaik.covid_19_info.retrofit;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

@@ -1,6 +1,7 @@
-package com.example.covid_19_info.retrofit;
+package com.abhinaik.covid_19_info.retrofit;
 
-import com.example.covid_19_info.model.Root;
+
+import com.abhinaik.covid_19_info.model.Root;
 
 import java.util.List;
 

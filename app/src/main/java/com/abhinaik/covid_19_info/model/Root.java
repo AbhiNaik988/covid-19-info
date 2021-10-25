@@ -1,4 +1,4 @@
-package com.example.covid_19_info.model;
+package com.abhinaik.covid_19_info.model;
 
 import androidx.annotation.NonNull;
 

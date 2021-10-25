@@ -1,4 +1,4 @@
-package com.example.covid_19_info;
+package com.abhinaik.covid_19_info;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,8 +10,9 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.covid_19_info.model.Root;
-import com.example.covid_19_info.retrofit.RetrofitClient;
+import com.abhinaik.covid_19_info.model.Root;
+import com.abhinaik.covid_19_info.retrofit.RetrofitClient;
+import com.example.covid_19_info.R;
 import com.hbb20.CountryCodePicker;
 
 import org.eazegraph.lib.charts.BarChart;
